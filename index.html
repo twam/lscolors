@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LSCOLORS Generator</title>
+    <link rel="stylesheet" href="lscolors.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="lscolors.js"></script>
+    </script>
+</head>
+<body>
+<div id="main">
+<h1>LS_COLORS Generator</h1>
+
+<div id="intro">
+<p>Select your desired colors and copy the corresponding export line to your .profile file! You can also edit the LSCOLORS and LS_COLORS field to convert one string to another. Notice that only values which 
+    are understood by LSCOLORS and LS_COLORS are supported!</p>
+
+<p>If you're using <a href="http://www.zsh.org/">zsh</a> as your shell and working on Linux and OS X machines you can get an idea how to add both from my <a href="https://github.com/twam/.dotfiles/blob/master ls_colors/ls_colors.zsh">ls_colors.zsh</a>.</p>
+
+<p>Based on an idea of <a href="https://github.com/ggreer/lscolors">Geoff Greer</a>.</p>
+</div>
+
+<h2>Color selection</h2>
+<table id="colorselectiontable">
+    <tr>
+        <th>File type</th>
+        <th>Bold</th>
+        <th>Foreground</th>
+        <th>Background</th>
+    </tr>
+</table>
+
+<h2>BSD/OS X (LSCOLORS)</h2>
+<div class="lscolors">export LSCOLORS="<input type="text" id="lscolors">";</div>
+
+<h2>Linux (LS_COLORS)</h2>
+<div class="ls_colors">export LS_COLORS="<textarea id="ls_colors"></textarea>";</div>
+
+<h2>Examples</h2>
+
+<div id="exampleblack" class="example">hostname:~ root# ls -l
+total 12
+-rw-rw----    1 root   root        721 Oct 22 12:42     <span class="example_entry" id="file">file</span> 
+drwxr-xr-x    2 root   root         68 Jul 14 10:13     <span class="example_entry" id="directory">directory</span>
+lrwxr-xr-x    1 root   root          9 Sep 27 16:57     <span class="example_entry" id="system_link">system_link -> /dev/null</span>
+srw-r--r--    1 root   root          0 May 22 22:22     <span class="example_entry" id="socket">socket</span>
+prw-r--r--    1 root   root          0 May  6 08:35     <span class="example_entry" id="pipe">pipe</span>
+-rwxrwxrwx    1 root   root          0 Dec  5 15:02     <span class="example_entry" id="executable">executable</span>
+brw-r--r--    1 root   root     1,   0 Nov 17 02:53     <span class="example_entry" id="block_special">block_special</span>
+crw-r--r--    1 root   root     7,   2 Jan 15 11:15     <span class="example_entry" id="char_special">char_special</span>
+-rwsrwxrwx    1 root   root          0 Feb 27 12:59     <span class="example_entry" id="exe_setuid">exe_setuid</span>
+-rwxrwsrwx    1 root   root          0 Jan 12 18:25     <span class="example_entry" id="exe_setgid">exe_setgid</span>
+drwxrwxrwt    2 root   root         68 Jun 21 20:17     <span class="example_entry" id="dir_writeothers_sticky">dir_writeothers_sticky</span>
+drwxrwxrwx    2 root   root         68 Jul  1 19:48     <span class="example_entry" id="dir_writeothers_nosticky">dir_writeothers_nosticky</span>
+hostname:~ root# <span id="cursor"> </span>
+</div>
+
+<div id="examplewhite" class="example">hostname:~ root# ls -l
+total 12
+-rw-rw----    1 root   root        721 Oct 22 12:42     <span class="example_entry" id="file">file</span> 
+drwxr-xr-x    2 root   root         68 Jul 14 10:13     <span class="example_entry" id="directory">directory</span>
+lrwxr-xr-x    1 root   root          9 Sep 27 16:57     <span class="example_entry" id="system_link">system_link -> /dev/null</span>
+srw-r--r--    1 root   root          0 May 22 22:22     <span class="example_entry" id="socket">socket</span>
+prw-r--r--    1 root   root          0 May  6 08:35     <span class="example_entry" id="pipe">pipe</span>
+-rwxrwxrwx    1 root   root          0 Dec  5 15:02     <span class="example_entry" id="executable">executable</span>
+brw-r--r--    1 root   root     1,   0 Nov 17 02:53     <span class="example_entry" id="block_special">block_special</span>
+crw-r--r--    1 root   root     7,   2 Jan 15 11:15     <span class="example_entry" id="char_special">char_special</span>
+-rwsrwxrwx    1 root   root          0 Feb 27 12:59     <span class="example_entry" id="exe_setuid">exe_setuid</span>
+-rwxrwsrwx    1 root   root          0 Jan 12 18:25     <span class="example_entry" id="exe_setgid">exe_setgid</span>
+drwxrwxrwt    2 root   root         68 Jun 21 20:17     <span class="example_entry" id="dir_writeothers_sticky">dir_writeothers_sticky</span>
+drwxrwxrwx    2 root   root         68 Jul  1 19:48     <span class="example_entry" id="dir_writeothers_nosticky">dir_writeothers_nosticky</span>
+hostname:~ root# <span id="cursor"> </span>
+</div>
+
+<p>
+    <a href="https://github.com/twam/lscolors">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+</p>
+</div>
+</body>
+</html>

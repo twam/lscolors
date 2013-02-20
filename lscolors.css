@@ -1,0 +1,210 @@
+// reset everything
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;}
+
+html, body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#intro {
+	text-align:center;
+}
+
+a, a:visited, a:hover, a:active {
+	color: blue;
+	text-decoration: none;
+}
+
+#main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+table#colorselectiontable {
+	margin: 0 auto;
+}
+
+table#colorselectiontable tr td {
+	text-align: center;
+}
+
+table#colorselectiontable tr td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table#colorselectiontable tr td:nth-child(1) {
+	text-align: left;
+}
+
+#lscolors, #ls_colors, #width_lscolors {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+#lscolors {
+	text-align: center;
+}
+
+#width_lscolors {
+	display: none;
+}
+
+#ls_colors {
+	resize: none;
+	width: 700px;
+	wrap: hard;
+}
+
+.lscolors, .ls_colors {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	background: white;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.example {
+	width: 700px;
+	margin: 0 auto;
+ 	border-width: 0px;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 10pt;
+    padding: 3px;
+    white-space: pre;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+#exampleblack {
+	background-color: black;
+	color: white;
+}
+
+#examplewhite {
+	background-color: white;
+	color: black;
+}
+
+.box {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid black;
+	margin: 2px;
+}
+
+.box.selected {
+	width: 11px;
+	height: 11px;
+	border: 2px dashed black;
+}
+
+.box.selected.black {
+	border: 2px dashed white;
+}
+
+.black, .background_black {
+	background-color: black;
+}
+
+.foreground_black {
+	color: black;
+}
+
+.red, .background_red {
+	background-color: red;
+}
+
+.foreground_red {
+	color: red;
+}
+
+.green, .background_green {
+	background-color: green;
+}
+
+.foreground_green {
+	color: green;
+}
+
+.brown, .background_brown {
+	background-color: brown;
+}
+
+.foreground_brown {
+	color: brown;
+}
+
+.blue, .background_blue {
+	background-color: blue;
+}
+
+.foreground_blue {
+	color: blue;
+}
+
+.magenta, .background_magenta {
+	background-color: magenta;
+}
+
+.foreground_magenta {
+	color: magenta;
+}
+
+.cyan, .background_cyan {
+	background-color: cyan;
+}
+
+.foreground_cyan {
+	color: cyan;
+}
+
+.grey, .background_grey {
+	background-color: grey;
+}
+
+.foreground_grey {
+	color: grey;
+}
+
+.default, .background_default {
+	background-color: none;
+}
+
+.foreground_default {
+}
+
+.background_bold {
+
+}
+
+.foreground_bold {
+	font-weight: bold;
+}
+
+.bold_checkbox {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.checked {
+	background-color: black!important;
+}
