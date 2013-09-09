@@ -1,9 +1,12 @@
-// reset everything
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;}
 
 html, body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
+}
+
+p {
+	margin-bottom: 0.5em;
 }
 
 h1 {
@@ -50,11 +53,11 @@ table#colorselectiontable tr td:nth-child(1) {
 }
 
 #lscolors, #ls_colors, #width_lscolors {
-    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+	font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+	font-size: 14px;
 	border: none;
 	margin: 0px;
 	padding: 0px;
-	font-size: 12px;
 }
 
 #lscolors {
@@ -72,8 +75,8 @@ table#colorselectiontable tr td:nth-child(1) {
 }
 
 .lscolors, .ls_colors {
-    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-	font-size: 12px;
+	font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+	font-size: 14px;
 	padding: 0px;
 	margin: 0px;
 	background: white;
@@ -85,12 +88,12 @@ table#colorselectiontable tr td:nth-child(1) {
 	width: 700px;
 	margin: 0 auto;
  	border-width: 0px;
-    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-    font-size: 10pt;
-    padding: 3px;
-    white-space: pre;
-    overflow: hidden;
-    border: 1px solid black;
+	font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    	font-size: 14px;
+	padding: 3px;
+    	white-space: pre;
+	overflow: hidden;
+	border: 1px solid black;
 }
 
 #exampleblack {
