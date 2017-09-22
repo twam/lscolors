@@ -111,6 +111,7 @@ $(document).ready(function() {
             });
 
             if (available_filetypes.indexOf(id) != undefined) {
+
                 span.addClass('foreground_'+selected_foreground_colors[available_filetypes.indexOf(id)]);
                 span.addClass('background_'+selected_background_colors[available_filetypes.indexOf(id)]);
                 selected_foreground_bold[available_filetypes.indexOf(id)] ? span.addClass('foreground_bold') : 0 ;
@@ -319,5 +320,15 @@ $(document).ready(function() {
     // init everything
     create_color_selection_table();
     update_everything();
+    $('#terminal_color').change( function() { 
+            $.each( $('.example'), function() { 
+                    var example = $(this); 
+                    //example.css('background-color', "#CCEED0") ; 
+                    example.css('background-color', $("#terminal_color").val() ) ; 
+                    //alert( $("#terminal_color").val() ) ; 
+                    });
+
+
+    } ) ;
 });
 

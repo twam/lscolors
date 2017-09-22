@@ -102,7 +102,7 @@ table#colorselectiontable tr td:nth-child(1) {
 }
 
 #examplewhite {
-	background-color: white;
+	background-color: #CCEED0;
 	color: black;
 }
 
